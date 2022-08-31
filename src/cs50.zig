@@ -725,7 +725,6 @@ pub fn getString(allocator: std.mem.Allocator, str: []const u8) ![]u8 {
 /// pub fn main() !void {
 ///   var allocator = std.heap.page_allocator;
 ///   const input = try cs50.getByte(allocator,"Prompt: ");
-///   defer allocator.free(input);
 ///   std.debug.print("{c}\n", .{input});
 /// }
 /// * *
